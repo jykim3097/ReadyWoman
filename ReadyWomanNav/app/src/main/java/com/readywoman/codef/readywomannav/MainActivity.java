@@ -47,19 +47,19 @@ public class MainActivity extends AppCompatActivity
 
         adapter.addItems(new ClassItem("[돌봄]영유아 돌봄이(베이비시터)_12월",
                 "2018.12.10 ~ 2018.12.21", "월,화,수,목,금 09:30~13:30",
-                80000, "중랑여성인력개발센터", R.drawable.image));
+                "80,000원", "12/17", "중랑여성인력개발센터"));
         adapter.addItems(new ClassItem("[정보화]ITQ엑셀자격증_11월",
                 "2018.11.20 ~ 2018.12.13", "화,목 09:30~12:30",
-                80000, "중랑여성인력개발센터", R.drawable.image));
+                "80,000원", "12/17", "중랑여성인력개발센터"));
         adapter.addItems(new ClassItem("개정교과에 맞춰 새로워진 초등수학 지도사(저학년)",
                 "2018.11.19 ~ 2018.12.24", "월 09:30~12:00",
-                100000, "서초여성인력개발센터", R.drawable.image));
+                "100,000원", "12/17", "서초여성인력개발센터"));
         adapter.addItems(new ClassItem("개정교과에 맞춰 새로워진 초등수학 지도사(고학년)",
                 "2018.11.15 ~ 2018.12.20", "목 09:30~12:30",
-                120000, "서초여성인력개발센터", R.drawable.image));
+                "120,000원",  "12/17", "서초여성인력개발센터"));
         adapter.addItems(new ClassItem("초등 영어 지도사 과정(오후)",
                 "2018.11.13 ~ 2019.01.15", "화 14:00~17:00",
-                80000, "서초여성인력개발센터", R.drawable.image));
+                "80,000원",  "12/17", "서초여성인력개발센터"));
 
         contentListView.setAdapter(adapter);
         contentListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -158,8 +158,8 @@ public class MainActivity extends AppCompatActivity
             view.setcTerm(item.getcTerm());
             view.setcTime(item.getcTime());
             view.setcPrice(item.getcPrice());
+            view.setStatus(item.getStatus());
             view.setCenter(item.getCenter());
-            view.setStatus(item.getResId());
             return view;
         }
     }

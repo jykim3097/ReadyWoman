@@ -13,8 +13,8 @@ public class ClassItemView extends LinearLayout {
     TextView cTerm;
     TextView cTime;
     TextView cPrice;
+    TextView status;
     TextView center;
-    ImageView status;
 
     public ClassItemView(Context context){
         super(context);
@@ -31,8 +31,8 @@ public class ClassItemView extends LinearLayout {
         cTerm = (TextView) findViewById(R.id.cTerm);
         cTime = (TextView) findViewById(R.id.cTime);
         cPrice = (TextView) findViewById(R.id.cPrice);
+        status = (TextView) findViewById(R.id.status);
         center = (TextView) findViewById(R.id.center);
-        status = (ImageView) findViewById(R.id.status);
     }
     public void setcName(String name){
         cName.setText(name);
@@ -43,13 +43,9 @@ public class ClassItemView extends LinearLayout {
     public void setcTime(String dTime){
         cTime.setText(dTime);
     }
-    public void setcPrice(int tuit){
-        cPrice.setText(String.valueOf(tuit));
-    }
+    public void setcPrice(String tuit){cPrice.setText(tuit);}
+    public void setStatus(String stat){status.setText(stat);}
     public void setCenter(String cent){
         center.setText(cent);
-    }
-    public void setStatus(int resId){
-        status.setImageResource(resId);
     }
 }

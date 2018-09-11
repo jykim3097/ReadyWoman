@@ -4,17 +4,17 @@ public class ClassItem {
     String cName;
     String cTerm;
     String cTime;
-    int cPrice;
+    String cPrice;
+    String status;
     String center;
-    int resId;
 
-    public ClassItem(String cName, String cTerm, String cTime, int cPrice, String center, int resId){
+    public ClassItem(String cName, String cTerm, String cTime, String cPrice, String status, String center){
         this.cName = cName;
         this.cTerm = cTerm;
         this.cTime = cTime;
         this.cPrice = cPrice;
+        this.status = status;
         this.center = center;
-        this.resId = resId;
     }
 
     public String getcName() {
@@ -41,28 +41,22 @@ public class ClassItem {
         this.cTime = cTime;
     }
 
-    public int getcPrice() {
+    public String getcPrice() {
         return cPrice;
     }
 
-    public void setcPrice(int cPrice) {
-        this.cPrice = cPrice;
+    public void setcPrice(String cPrice) {this.cPrice = cPrice;}
+
+    public String getStatus() {
+        return status;
     }
 
-    public String getCenter() {
-        return center;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public void setCenter(String center) {
-        this.center = center;
-    }
+    public String getCenter() {return center;}
 
-    public int getResId() {
-        return resId;
-    }
-
-    public void setResId(int resId) {
-        this.resId = resId;
-    }
+    public void setCenter(String center) {this.center = center; }
 
 }
