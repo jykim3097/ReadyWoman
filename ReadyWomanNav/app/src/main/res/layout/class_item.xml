@@ -7,6 +7,7 @@
         android:id="@+id/cName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
         android:text="강좌명"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -25,7 +26,6 @@
                 android:id="@+id/cTerm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
                 android:text="교육기간"
                 android:textColor="#575757"
                 android:textSize="17dp" />
@@ -34,7 +34,6 @@
                 android:id="@+id/cTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/cTerm"
                 android:text="요일/시간"
                 android:textColor="#575757"
                 android:textSize="17dp"/>
@@ -43,7 +42,6 @@
                 android:id="@+id/cPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
                 android:text="수강료"
                 android:textColor="#575757"
                 android:textSize="17dp"/>
@@ -52,7 +50,6 @@
                 android:id="@+id/center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/cPrice"
                 android:text="강좌센터"
                 android:textColor="#575757"
                 android:textSize="17dp"/>
@@ -62,7 +59,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:background="@drawable/rounded"
-            android:layout_marginRight="10dp"
             android:layout_gravity="center_vertical">
             <TextView
                 android:layout_width="wrap_content"
