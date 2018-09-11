@@ -6,6 +6,7 @@ import android.database.SQLException;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.os.Bundle;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -203,7 +204,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    //search icon in ActionBar
+   //search icon in ActionBar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
@@ -223,7 +224,7 @@ public class MainActivity extends AppCompatActivity
         }
         return super.onOptionsItemSelected(menuItem);
     }
-
+    
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -300,7 +301,8 @@ public class MainActivity extends AppCompatActivity
 
     private void doWhileCursorToArray() {
         mCursor = null;
-        //db에 있는 모든 칼럼을 가져옴
+       
+       //db에 있는 모든 칼럼을 가져옴
         mCursor = mDBOpenHelper.getAllColumns();
         //컬럼의 갯수 확인
         Log.i("Column 개수 확인 ", "Count = " + mCursor.getCount());
@@ -329,3 +331,6 @@ public class MainActivity extends AppCompatActivity
         super.onDestroy();
     }
 }
+
+
+
