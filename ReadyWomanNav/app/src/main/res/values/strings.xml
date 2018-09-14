@@ -6,4 +6,40 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <!--내일배움카드제 xml string-->
+    <!--def-->
+    <string name="def_name">내일배움카드제란?</string>
+    <string name="def_content"> 구직자(실업자) 및 자영업자 등에게 내일배움카드를 발급하고 일정 금액의
+        훈련비를 지원함으로서 직업능력 개발훈련에 참여할 수 있도록 하며, 직업능력개발 훈련 이력을 종합적으로
+        관리하는 제도입니다.</string>
+
+    <!--who-->
+    <string name="who_name">누가 신청할 수 있나요?</string>
+    <string name="who_tr1_td1">구직자</string>
+    <string name="who_tr1_td2">전직실업자 및 신규실업자</string>
+    <string name="who_tr2_td1">재직자</string>
+    <string name="who_tr2_td2">월 60시간 미만인 근로자 중 고용보험 피보험 자격 미취득자</string>
+    <string name="who_tr3_td1">자영업자&#160;</string>
+    <string name="who_tr3_td2">연소득 1억 5,000만원 미만</string>
+    <string name="who_tr4_td1">*성별무관</string>
+
+    <!--what-->
+    <string name="what_name">어떤 혜택이 있나요?</string>
+    <!--what table 1-->
+    <string name="what_tr1_td1">훈련비</string>
+    <string name="what_tr1_td2">1인당 연최대 300만원(카드 발급 유형에 따라 최대 300만원까지 지원 가능)</string>
+    <string name="what_tr2_td1">훈련장려금&#160;</string>
+    <string name="what_tr2_td2">최대 11만 6천원</string>
+
+    <!--what table 2-->
+    <string name="what2_th1">지원 대상</string>
+    <string name="what2_th2">훈련비 지원율</string>
+    <string name="what2_tr1_td1">일반사업자 등</string>
+    <string name="what2_tr1_td2">최대 200만원까지 훈련비의 20~9\n5% 지원(훈련비의 5~80% 및 지원\n한도를 초과하는 금액은 자비부담)</string>
+    <string name="what2_tr2_td1">취업성공패키지\n 참여자 (교육후\n 취업 또는 창업에\n 성공하여 일정기간\n 이상 유지시)</string>
+    <string name="what2_tr2_td2">2유형</string>
+    <string name="what2_tr2_td3">200만원까지 훈련비의 50~95%\n 지원(훈련비의 5~50% 및 지원한도\n를 초과하는 금액은 자비부담)</string>
+    <string name="what2_tr3_td2">1유형</string>
+    <string name="what2_tr3_td3">훈련비 전액을 최대 300만원까지\n 지원(지원한도를 초과하는 훈련비\n는 자비부담)</string>
 </resources>
