@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ReadyWomanNav</string>
+    <string name="app_name">ReadyWoman</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -7,7 +7,22 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <!--내일배움카드제 xml string-->
+    <!--상세화면 activity_details.xml string-->
+    <!--table1-->
+    <string name="t1_tr1_td1">센터명</string>
+    <string name="t1_tr2_td1">교육기간</string>
+    <string name="t1_tr3_td1">교육시간</string>
+    <string name="t1_tr4_td1">수강료</string>
+    <string name="t1_tr5_td1">수강신청기간&#160;</string>
+    <string name="t1_tr6_td1">접수방법</string>
+
+    <!--table2-->
+    <string name="t2_tr1">수강자격</string>
+    <string name="t2_tr2">교육목적</string>
+    <string name="t2_tr3">교육내용개요</string>
+    <string name="t2_tr4">재료비</string>
+
+    <!--내일배움카드제 activity_nationaltomorrow.xml string-->
     <!--def-->
     <string name="def_name">내일배움카드제란?</string>
     <string name="def_content"> 구직자(실업자) 및 자영업자 등에게 내일배움카드를 발급하고 일정 금액의
