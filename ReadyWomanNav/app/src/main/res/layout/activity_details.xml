@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mostOuter">
+
+    <LinearLayout
+        android:id="@+id/outer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/table1Outer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#f9eff9">
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                android:layout_margin="5dp"
+                android:background="#ffffff">
+
+                <TableRow
+                    android:id="@+id/t1_tr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/t1_tr1_td1"
+                        android:layout_width="26dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/t1_tr1_td1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#a839a8" />
+                    <TextView
+                        android:id="@+id/center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="10" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t1_tr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/t1_tr2_td1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/t1_tr2_td1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#a839a8"/>
+                    <TextView
+                        android:id="@+id/cTerm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="10"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t1_tr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/t1_tr3_td1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/t1_tr3_td1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#a839a8"/>
+                    <TextView
+                        android:id="@+id/cTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="10" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t1_tr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/t1_tr4_td1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/t1_tr4_td1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#a839a8"/>
+                    <TextView
+                        android:id="@+id/cPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="10"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t1_tr5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/t1_tr5_td1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/t1_tr5_td1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#a839a8"/>
+                    <TextView
+                        android:id="@+id/cATerm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="10"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t1_tr6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/t1_tr6_td1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/t1_tr6_td1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#a839a8"/>
+                    <TextView
+                        android:id="@+id/cRMethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="10"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/table2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/t2_tr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t2_tr1"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:textColor="#a839a8"/>
+            <TextView
+                android:id="@+id/cQual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/t2_tr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t2_tr2"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:textColor="#a839a8"/>
+            <TextView
+                android:id="@+id/cGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/t2_tr3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t2_tr3"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:textColor="#a839a8"/>
+            <TextView
+                android:id="@+id/cOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/t2_tr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t2_tr4"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:textColor="#a839a8"/>
+            <TextView
+                android:id="@+id/cCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="#f9eff9"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
