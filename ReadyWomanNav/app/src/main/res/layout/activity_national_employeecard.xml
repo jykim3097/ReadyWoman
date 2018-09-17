@@ -2,24 +2,24 @@
 <!--근로자카드제 xml-->
 
 <ScrollView
+    android:id="@+id/employee_mostOuter"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/employee_mostOuter">
+    android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/employee_outer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/employee_outer">
+        android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/employee_def"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:id="@+id/employee_def">
+            android:layout_margin="10dp">
 
             <!--근로자직업능력개발훈련이란?-->
             <TextView
@@ -38,8 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="@string/employee_def_content"
-                />
+                android:text="@string/employee_def_content" />
 
         </LinearLayout>
 
@@ -409,6 +408,7 @@
                     android:background="#ffffff"
                     android:layout_marginTop="2dp"
                     android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"/>
                 <TextView
                     android:id="@+id/employee_what2_th2"
@@ -422,6 +422,7 @@
                     android:background="#ffffff"
                     android:layout_marginTop="2dp"
                     android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"/>
                 <TextView
                     android:id="@+id/employee_what2_th3"
@@ -445,6 +446,7 @@
                     android:gravity="center"
                     android:background="#ffffff"
                     android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"/>
                 <TextView
                     android:id="@+id/employee_what2_tr1_td2"
@@ -455,6 +457,7 @@
                     android:gravity="center"
                     android:background="#ffffff"
                     android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"/>
                 <TextView
                     android:id="@+id/employee_what2_tr1_td3"
@@ -475,6 +478,7 @@
                     android:gravity="center"
                     android:background="#ffffff"
                     android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"/>
                 <TextView
                     android:id="@+id/employee_what2_tr2_td2"
@@ -485,6 +489,7 @@
                     android:gravity="center"
                     android:background="#ffffff"
                     android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"/>
                 <TextView
                     android:id="@+id/employee_what2_tr2_td3"
@@ -505,6 +510,7 @@
                     android:gravity="center"
                     android:background="#ffffff"
                     android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"/>
                 <TextView
                     android:id="@+id/employee_what2_tr3_td2"
@@ -515,6 +521,7 @@
                     android:gravity="center"
                     android:background="#ffffff"
                     android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"/>
                 <TextView
                     android:id="@+id/employee_what2_tr3_td3"
@@ -528,6 +535,7 @@
             </GridLayout>
 
             <TextView
+                android:id="@+id/employee_what2_tr4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/employee_what2_tr4"
@@ -536,6 +544,7 @@
                 android:layout_marginRight="5dp"/>
         </LinearLayout>
 
+        <!--지원절차-->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -543,13 +552,12 @@
             android:layout_margin="10dp"
             android:id="@+id/employee_procedure">
 
-            <!--지원절차-->
             <TextView
                 android:id="@+id/employee_procedureName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="@string/procedure_name"
+                android:text="@string/procedure_name2"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#a839a8"
@@ -572,10 +580,11 @@
                         android:id="@+id/employee_procedure_tr1_td1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/employee_procedure_tr1_td1"
+                        android:text="@string/num1"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:layout_marginRight="5dp"/>
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"/>
                     <TextView
                         android:id="@+id/employee_procedure_tr1_td2"
                         android:layout_width="wrap_content"
@@ -592,10 +601,11 @@
                         android:id="@+id/employee_procedure_tr2_td1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/employee_procedure_tr2_td1"
+                        android:text="@string/num2"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:layout_marginRight="5dp"/>
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"/>
                     <TextView
                         android:id="@+id/employee_procedure_tr2_td2"
                         android:layout_width="wrap_content"
@@ -612,10 +622,11 @@
                         android:id="@+id/employee_procedure_tr3_td1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/employee_procedure_tr3_td1"
+                        android:text="@string/num3"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:layout_marginRight="5dp"/>
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"/>
                     <TextView
                         android:id="@+id/employee_procedure_tr3_td2"
                         android:layout_width="wrap_content"
