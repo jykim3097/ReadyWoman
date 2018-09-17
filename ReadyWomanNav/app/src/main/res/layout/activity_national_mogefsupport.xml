@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--여성가족부(mogef: Ministry of Gender Equality and Family) 지원 프로그램 xml-->
+<ScrollView
+    android:id="@+id/mogef_mostOuter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mogef_outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--여성가족부 지원 직업훈련 과정은?-->
+        <LinearLayout
+            android:id="@+id/mogef_def"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/mogef_defName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/mogef_def_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/mogef_defContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/mogef_def_content" />
+        </LinearLayout>
+
+        <!--누가 신청할 수 있나요?-->
+        <LinearLayout
+            android:id="@+id/mogef_who"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/mogef_whoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/who_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/mogef_whoSName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/mogef_whoSName"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"/>
+
+            <TableLayout
+                android:id="@+id/mogef_whoTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <TableRow
+                    android:id="@+id/mogef_who_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/mogef_who_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/mogef_who_tr1_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mogef_who_tr1"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/mogef_who_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/mogef_who_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9" />
+                    <TextView
+                        android:id="@+id/mogef_who_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mogef_who_tr2"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+        <!--어떤 혜택이 있나요?-->
+        <LinearLayout
+            android:id="@+id/mogef_what"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/mogef_whatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/what_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/mogef_whatContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/mogef_what_content" />
+        </LinearLayout>
+
+        <!--신청방법-->
+        <LinearLayout
+            android:id="@+id/mogef_signup"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/mogef_signupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/signup_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TableLayout
+                android:id="@+id/mogef_signupTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <TableRow
+                    android:id="@+id/mogef_signup_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp">
+                    <TextView
+                        android:id="@+id/mogef_signup_tr1_td1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/num1"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"/>
+                    <TextView
+                        android:id="@+id/mogef_signup_tr1_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_tr1_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/mogef_signup_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp">
+                    <TextView
+                        android:id="@+id/mogef_signup_tr2_td1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/num2"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"/>
+                    <TextView
+                        android:id="@+id/mogef_signup_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_tr2_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/mogef_signup_tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp">
+                    <TextView
+                        android:id="@+id/mogef_signup_tr3_td1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/num3"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"/>
+                    <TextView
+                        android:id="@+id/mogef_signup_tr3_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_tr3_td2"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <!--제출 서류-->
+        <LinearLayout
+            android:id="@+id/mogef_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/mogef_submitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/submit_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+
+            <TableLayout
+                android:id="@+id/mogef_submitTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <TableRow
+                    android:id="@+id/mogef_submit_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/mogef_submit_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/mogef_submit_tr1_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submit_tr1"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/mogef_submit_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/mogef_submit_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9" />
+                    <TextView
+                        android:id="@+id/mogef_submit_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submit_tr2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/mogef_submit_tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/mogef_submit_tr3_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/mogef_submit_tr3_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submit_tr3"/>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
