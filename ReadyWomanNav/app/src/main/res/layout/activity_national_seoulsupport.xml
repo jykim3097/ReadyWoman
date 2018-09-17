@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--서울시 지원 사업 xml-->
+<ScrollView
+    android:id="@+id/seoul_mostOuter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/seoul_outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/seoul_def"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <!--서울시 지원사업 프로그램이란?-->
+            <TextView
+                android:id="@+id/seoul_defName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/seoul_def_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/seoul_defContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/seoul_def_content" />
+
+        </LinearLayout>
+
+        <!--누가 신청할 수 있나요?-->
+        <LinearLayout
+            android:id="@+id/seoul_who"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/seoul_whoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/who_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/seoul_who_tr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/seoul_who_tr1" />
+            <TextView
+                android:id="@+id/seoul_who_tr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/seoul_who_tr2" />
+
+        </LinearLayout>
+
+        <!--어떤 혜택이 있나요?-->
+        <LinearLayout
+            android:id="@+id/seoul_what"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/seoul_whatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/what_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+
+            <TableLayout
+                android:id="@+id/seoul_whatTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <TableRow
+                    android:id="@+id/seoul_what_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_what_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/seoul_what_tr1_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_what_tr1"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seoul_what_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_what_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9" />
+                    <TextView
+                        android:id="@+id/seoul_what_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_what_tr2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seoul_what_tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_what_tr3_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/seoul_what_tr3_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_what_tr3"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seoul_what_tr4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_what_tr4_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9" />
+                    <TextView
+                        android:id="@+id/seoul_what_tr4_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_what_tr4"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seoul_what_tr5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_what_tr5_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/seoul_what_tr5_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_what_tr5"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <!--제출서류-->
+        <LinearLayout
+            android:id="@+id/seoul_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/seoul_submitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/submit_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/seoul_submitSName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/seoul_submit_Sname1"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"/>
+
+            <TableLayout
+                android:id="@+id/seoul_submit_Table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <TableRow
+                    android:id="@+id/seoul_submit_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_submit_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/seoul_submit_tr1_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seoul_submit_tr1"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seoul_submit_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_submit_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9" />
+                    <TextView
+                        android:id="@+id/seoul_submit_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seoul_submit_tr2"/>
+                </TableRow>
+
+            </TableLayout>
+
+
+            <TextView
+                android:id="@+id/seoul_submitSName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/seoul_submit_Sname2"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"/>
+
+            <TableLayout
+                android:id="@+id/seoul_submitTable2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <TableRow
+                    android:id="@+id/seoul_submit2_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_submit2_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/seoul_submit2_tr1_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seoul_submit2_tr1"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seoul_submit2_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_submit2_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9" />
+                    <TextView
+                        android:id="@+id/seoul_submit2_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seoul_submit2_tr2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seoul_submit2_tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_submit2_tr3_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/seoul_submit2_tr3_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seoul_submit2_tr3"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seoul_submit2_tr4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/seoul_submit2_tr4_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9" />
+                    <TextView
+                        android:id="@+id/seoul_submit2_tr4_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seoul_submit2_tr4"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
