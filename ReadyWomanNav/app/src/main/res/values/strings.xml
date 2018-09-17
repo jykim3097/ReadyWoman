@@ -15,7 +15,6 @@
     <string name="t1_tr4_td1">수강료</string>
     <string name="t1_tr5_td1">수강신청기간&#160;</string>
     <string name="t1_tr6_td1">접수방법</string>
-
     <!--table2-->
     <string name="t2_tr1">수강자격</string>
     <string name="t2_tr2">교육목적</string>
@@ -29,7 +28,6 @@
     <string name="def_content"> 구직자(실업자) 및 자영업자 등에게 내일배움카드를 발급하고 일정 금액의
         훈련비를 지원함으로서 직업능력 개발훈련에 참여할 수 있도록 하며, 직업능력개발 훈련 이력을 종합적으로
         관리하는 제도입니다.</string>
-
     <!--who-->
     <string name="who_name">누가 신청할 수 있나요?</string>
     <string name="who_tr1_td2">구직자</string>
@@ -39,7 +37,6 @@
     <string name="who_tr3_td2">자영업자&#160;</string>
     <string name="who_tr3_td3">연소득 1억 5,000만원 미만</string>
     <string name="who_tr4">*성별무관</string>
-
     <!--what-->
     <string name="what_name">어떤 혜택이 있나요?</string>
     <!--what table 1-->
@@ -47,39 +44,43 @@
     <string name="what_tr1_td2">1인당 연최대 300만원(카드 발급 유형에 따라 최대 300만원까지 지원 가능)</string>
     <string name="what_tr2_td1">훈련장려금&#160;</string>
     <string name="what_tr2_td2">최대 11만 6천원</string>
-
     <!--what table 2-->
     <string name="what2_th1">지원 대상</string>
     <string name="what2_th2">훈련비 지원율</string>
     <string name="what2_tr1_td1">일반사업자 등</string>
-    <string name="what2_tr1_td2">최대 200만원까지 훈련비의 20~9\n5% 지원(훈련비의 5~80% 및 지원\n한도를 초과하는 금액은 자비부담)</string>
-    <string name="what2_tr2_td1">취업성공패키지\n 참여자 (교육후\n 취업 또는 창업에\n 성공하여 일정기간\n 이상 유지시)</string>
+    <string name="what2_tr1_td2">최대 200만원까지 훈련비의 20~9\n5% 지원(훈련비의 5~80% 및 지원
+        \n한도를 초과하는 금액은 자비부담)</string>
+    <string name="what2_tr2_td1">취업성공패키지\n 참여자 (교육후\n 취업 또는 창업에\n 성공하여 일정기간
+        \n 이상 유지시)</string>
     <string name="what2_tr2_td2">2유형</string>
-    <string name="what2_tr2_td3">200만원까지 훈련비의 50~95%\n 지원(훈련비의 5~50% 및 지원한도\n를 초과하는 금액은 자비부담)</string>
+    <string name="what2_tr2_td3">200만원까지 훈련비의 50~95%\n 지원(훈련비의 5~50% 및 지원한도
+        \n를 초과하는 금액은 자비부담)</string>
     <string name="what2_tr3_td2">1유형</string>
-    <string name="what2_tr3_td3">훈련비 전액을 최대 300만원까지\n 지원(지원한도를 초과하는 훈련비\n는 자비부담)</string>
-
-    <!--procedure(지원절차)-->
-    <string name="procedure_name">지원 절차</string>
-    <string name="procedure_content">참여대상별 제출 구비서류가 상이하오니 신청시 근처 개발센터 담당자에게 문의하여 주시기 바랍니다.</string>
+    <string name="what2_tr3_td3">훈련비 전액을 최대 300만원까지\n 지원(지원한도를 초과하는 훈련비
+        \n는 자비부담)</string>
+    <!--procedure(지원방법)-->
+    <string name="procedure_name">지원 방법</string>
+    <string name="procedure_content">참여대상별 제출 구비서류가 상이하오니 신청시 근처 개발센터
+        담당자에게 문의하여 주시기 바랍니다.</string>
 
 
     <!--근로자카드제 activity_national_employeecard.xml string-->
-
     <!--employee_def-->
     <string name="employee_def_name">근로자직업능력개발훈련이란?</string>
     <string name="employee_def_content"> 고용보험에 가입한 근로자 등이 직무 경쟁력 강화를 도모할 수
         있도록 근로자카드를 발급받아 직업능력개발 훈련에 참여할 할 수 있도록 훈련비용을 지원하는 제도입니다.</string>
-
     <!--employee_who-->
     <!--<string name="who_name">누가 신청할 수 있나요?</string>   : 내일배움카드제와 공통-->
-    <string name="employee_who_def">다음 요건 중 어느 하나에 해당하는 고용보험 가입 근로자 \n(근로자 카드 신청일자 기준)</string>
+    <string name="employee_who_def">다음 요건 중 어느 하나에 해당하는 고용보험 가입 근로자
+        \n(근로자 카드 신청일자 기준)</string>
     <string name="blank">&#160;&#160;&#160;&#160;&#160;</string>
     <string name="employee_who_tr1">우선지원대상기업에 재직중인 근로자</string>
     <string name="employee_who_tr2">기간제 근로계약을 체결한 기간제 근로자</string>
-    <string name="employee_who_tr3">1주 동안의 소정 근로시간에 비하여 짧은 단시간 근로자 (1주 동안의 소정근로시간이 36시간 미만)</string>
+    <string name="employee_who_tr3">1주 동안의 소정 근로시간에 비하여 짧은 단시간 근로자
+        (1주 동안의 소정근로시간이 36시간 미만)</string>
     <string name="employee_who_tr4">파견근로자보호 등에 관한 법률에 따른 파견근로자</string>
-    <string name="employee_who_tr5">일용근로자 (근로자 카드 신청일 이전 30일 이내에 10일 이상 일용근로내용이 있는 자)</string>
+    <string name="employee_who_tr5">일용근로자 (근로자 카드 신청일 이전 30일 이내에 10일 이상
+        일용근로내용이 있는 자)</string>
     <string name="employee_who_tr6">고용보험료 체납액이 없는 자영업자</string>
     <string name="employee_who_tr7">근로자 카드를 신청한 일로부터 180일 이내에 이직 예정인 자</string>
     <string name="employee_who_tr8">경영상의 이유로 90일 이상 무급휴직, 휴업중인 자</string>
@@ -88,16 +89,13 @@
         그 기간 동안에 사업주 및 근로자 개인 지원 훈련과정 수강이력이 없는 자</string>
     <string name="employee_who_tr11">육아휴직자</string>
     <string name="employee_who_tr12">일학습병행제 훈련에 참여한 근로자</string>
-
     <!--employee_what   : 내일배움카드제와 공통-->
     <!--<string name="what_name">어떤 혜택이 있나요?</string>-->
-
     <!--employee_what table 1-->
     <!--<string name="what_tr1_td1">훈련비</string>-->
     <!--<string name="what_tr1_td2">1인당 연최대 300만원(카드 발급 유형에 따라 최대 300만원까지 지원 가능)</string>-->
     <!--<string name="what_tr2_td1">훈련장려금&#160;</string>-->
     <!--<string name="what_tr2_td2">최대 11만 6천원</string>-->
-
     <!--employee_what table 2-->
     <string name="employee_what2_th1">훈련구분</string>
     <string name="employee_what2_th2">지원금액</string>
@@ -119,13 +117,139 @@
                                             \n고용노동부 장관이 고시한
                                             \n금액을 초과할 수 없음</string>
     <string name="employee_what2_tr4">* 비정규직: 기간제근로자, 단시간근로자, 파견근로자, 일용근로자</string>
-
     <!--employee_procedure(지원절차)-->
-    <!--<string name="procedure_name">지원 절차</string>   : 내일배움카드제와 공통-->
-    <string name="employee_procedure_tr1_td1">1.</string>
+    <string name="procedure_name2">지원 절차</string>
+    <string name="num1">1.</string>
+    <string name="num2">2.</string>
+    <string name="num3">3.</string>
     <string name="employee_procedure_tr1_td2">HRD-Net(고용노동부 직업훈련포털)을 통한 온라인 또는 고용센터 방문 등을 통한 카드 발급</string>
-    <string name="employee_procedure_tr2_td1">2.</string>
     <string name="employee_procedure_tr2_td2">훈련과정 검색 및 수강신청 후 훈련(교육)참여</string>
-    <string name="employee_procedure_tr3_td1">3.</string>
     <string name="employee_procedure_tr3_td2">고용센터로부터 훈련비·훈련장려금지원</string>
+
+
+    <!--서울시 지원사업 activity_national_seoulsupportproj.xml string-->
+    <!--seoulsupport_def-->
+    <string name="seoul_def_name">서울시 지원사업 프로그램이란?</string>
+    <string name="seoul_def_content">서울시가 지원하는 여성사회 참여 및 경제력 향상을 도모하는
+        직업훈련프로그램으로 민간부문의 교육시설 및 기관과는 차별화된 서비스를 통해 여성이 사회적/지역적
+        수요에 적극적으로 부응 할 수 있도록 서울시 관내 여성인력개발센터가 운영하고 있습니다.</string>
+    <!--seoulsupport_who-->
+    <!--<string name="who_name">누가 신청할 수 있나요?</string>   : 내일배움카드제와 공통-->
+    <string name="seoul_who_tr1">등본상 서울시 거주자 (결혼여부 무관)</string>
+    <string name="seoul_who_tr2">* 고용보험 가입자는 참여 불가능</string>
+    <!--seoulsupport_what-->
+    <!--<string name="what_name">어떤 혜택이 있나요?</string>   : 내일배움카드제와 공통-->
+    <!--<string name="blank">&#160;&#160;&#160;&#160;&#160;</string>   : 내일배움카드제와 공통-->
+    <string name="common_what_tr1">직업상담</string>
+    <string name="common_what_tr2">직업교육훈련</string>
+    <string name="common_what_tr3">인턴십 지원</string>
+    <string name="common_what_tr4">취업연계</string>
+    <string name="common_what_tr5">취업 후 사후관리</string>
+    <!--seoulsupport_procedure(지원절차)-->
+    <!--<string name="procedure_name">지원 절차</string>   : 내일배움카드제와 공통-->
+    <string name="seoul_submit_Sname1">신청시 제출서류</string>
+    <string name="seoul_submit_tr1">참가신청서</string>
+    <string name="seoul_submit_tr2">구직신청서</string>
+    <string name="seoul_submit_Sname2">최종 선발시 제출서류</string>
+    <string name="seoul_submit2_tr1">반명함 사진 2장</string>
+    <string name="seoul_submit2_tr2">신분증</string>
+    <string name="seoul_submit2_tr3">주민등록등본 1통</string>
+    <string name="seoul_submit2_tr4">본인부담금</string>
+
+
+    <!--여성가족부 지원사업 activity_national_mogefsupport.xml string-->
+    <!--mogef_def-->
+    <string name="mogef_def_name">여성가족부 지원 직업훈련 과정은?</string>
+    <string name="mogef_def_content">출산과 육아, 가사 등으로 경력이 단절된 여성의 취업을
+        지원하는 종합 취업지원기관인 여성새로일하기센터를 통해 직업상담에서 직업교육, 취업연계, 취업 후
+        사후관리에 이르기까지 구직과 취업에 관련된 모든 서비스를 받으실 수 있는 과정이며, 동일한 서비스를
+        여성인력개발센터에서도 받으실 수 있습니다.</string>
+    <!--mogefsupport_who-->
+    <!--<string name="who_name">누가 신청할 수 있나요?</string>   : 내일배움카드제와 공통-->
+    <string name="mogef_whoSName">취업을 원하는 미취업 여성(결혼여부 무관)</string>
+    <!--<string name="blank">&#160;&#160;&#160;&#160;&#160;</string>   : 내일배움카드제와 공통-->
+    <string name="mogef_who_tr1">고용보험 가입자는 참여 불가능</string>
+    <string name="mogef_who_tr2">면접을 통해 최종 훈련생 선발</string>
+    <!--mogefsupport_what-->
+    <!--<string name="what_name">어떤 혜택이 있나요?</string>   : 내일배움카드제와 공통-->
+    <string name="mogef_what_content">직업상담, 직업교육훈련, 인턴십 지원, 취업연계, 취업 후
+        사후관리 (프로그램 참여시 자비부담금액 10만원이 있으며, 이는 교육과정 수료시 5만원, 취업시 5만원이
+        환급됩니다.)</string>
+    <!--mogefsupport_signup(신청방법)-->
+    <string name="signup_name">신청 방법</string>
+    <!--<string name="num1">1.</string>-->
+    <!--<string name="num2">2.</string>-->
+    <!--<string name="num3">3.</string>-->
+    <string name="signup_tr1_td2">수강신청(온라인 또는 직접방문)</string>
+    <string name="signup_tr2_td2">구직신청서, 참가신청서 작성 후 이메일로 발송</string>
+    <string name="signup_tr3_td2">수강신청 및 접수 완료</string>
+    <!--mogefsupport_submit-->
+    <string name="submit_name">제출서류</string>
+    <!--<string name="blank">&#160;&#160;&#160;&#160;&#160;</string>   : 내일배움카드제와 공통-->
+    <string name="submit_tr1">구직신청서</string>
+    <string name="submit_tr2">참가신청서</string>
+    <string name="submit_tr3">반명함사진(최종 선발시)</string>
+
+
+    <!--기타지원직업훈련 activity_national_etcsupport.xml string-->
+    <!--etc_def-->
+    <string name="etc_def_name">지역산업맞춤 직업훈련은?</string>
+    <string name="etc_def_content">자치구 등 지역이 주도하는 고용·인적자원 개발사업을 통해
+        지역·산업별 특성에 맞는 고용창출 및 직업능력개발에 기여하고 지역 간 노동시장 불균형을 해소하기 위해
+        운영되는 고용노동부 일자리창출 지원사업</string>
+    <!--etc_who-->
+    <!--<string name="who_name">누가 신청할 수 있나요?</string>   : 내일배움카드제와 공통-->
+    <!--<string name="blank">&#160;&#160;&#160;&#160;&#160;</string>   : 내일배움카드제와 공통-->
+    <string name="etc_who_tr1">청년 구직자 분(만 39세 이하, 성별무관)</string>
+    <string name="etc_who_tr2">대학졸업 직전 학기를 마친 청년층</string>
+    <!--etc_what    :  여성가족부 지원사업과 공통-->
+    <!--<string name="what_name">어떤 혜택이 있나요?</string>-->
+    <!--<string name="common_what_tr1">직업상담</string>-->
+    <!--<string name="common_what_tr2">직업교육훈련</string>-->
+    <!--<string name="common_what_tr3">인턴십 지원</string>-->
+    <!--<string name="common_what_tr4">취업연계</string>-->
+    <!--<string name="common_what_tr5">취업 후 사후관리</string>-->
+    <!--etc_signup(신청방법)    :  여성가족부 지원사업과 공통-->
+    <!--<string name="signup_name">신청 방법</string>-->
+    <!--<string name="num1">1.</string>-->
+    <!--<string name="num2">2.</string>-->
+    <!--<string name="num3">3.</string>-->
+    <!--<string name="signup_tr1_td2">수강신청(온라인 또는 직접방문)</string>-->
+    <string name="etc_signup_tr2_td2">구직신청서, 수강신청서 제출</string>
+    <!--<string name="signup_tr3_td2">수강신청 및 접수 완료</string>-->
+    <!--etc_submit-->
+    <!--<string name="submit_name">제출서류</string>-->
+    <!--<string name="blank">&#160;&#160;&#160;&#160;&#160;</string>   : 내일배움카드제와 공통-->
+    <!--<string name="submit_tr1">구직신청서</string>-->
+    <!--<string name="submit_tr2">참가신청서</string>-->
+    <!--<string name="submit_tr3">반명함사진(최종 선발시)</string>-->
+
+
+    <!--집단상담 activity_national_collectiveconsultation.xml string-->
+    <!--cc_def-->
+    <string name="cc_def_name">집단상담 프로그램은?</string>
+    <string name="cc_def_content">집단상담프로그램은 결혼, 출산으로 경력이 단절된 여성, 여성가장,
+        장기구직자들이 취업을 하기 전에 자신에 대한 이해를 도모하고 자존감을 높일 수 있는 프로그램입니다.</string>
+    <!--cc_who-->
+    <!--<string name="who_name">누가 신청할 수 있나요?</string>   : 내일배움카드제와 공통-->
+    <string name="cc_who_tr1">취업을 원하는 미취업 여성</string>
+    <string name="cc_who_tr2">* 고용보험 가입자는 참여 불가능</string>
+    <!--cc_what-->
+    <!--<string name="what_name">어떤 혜택이 있나요?</string>   : 내일배움카드제와 공통-->
+    <!--<string name="common_what_tr1">직업상담</string>-->
+    <!--<string name="common_what_tr2">직업교육훈련</string>-->
+    <!--<string name="common_what_tr3">인턴십 지원</string>-->
+    <!--<string name="common_what_tr4">취업연계</string>-->
+    <!--<string name="common_what_tr5">취업 후 사후관리</string>-->
+    <!--cc_signup(신청방법)    :  여성가족부 지원사업과 공통-->
+    <!--<string name="signup_name">신청 방법</string>-->
+    <!--<string name="blank">&#160;&#160;&#160;&#160;&#160;</string>   : 내일배움카드제와 공통-->
+    <!--<string name="signup_tr1_td2">수강신청(온라인 또는 직접방문)</string>-->
+    <!--cc_submit-->
+    <!--<string name="submit_name">제출서류</string>-->
+    <!--<string name="blank">&#160;&#160;&#160;&#160;&#160;</string>   : 내일배움카드제와 공통-->
+    <!--<string name="submit_tr1">구직신청서</string>-->
+    <!--<string name="submit_tr2">참가신청서</string>-->
+    <string name="cc_submit_tr3">반명함사진 1매</string>
+    <string name="cc_submit_tr4">주민등록증 사본 1부</string>
 </resources>

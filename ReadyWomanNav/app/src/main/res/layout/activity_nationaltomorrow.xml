@@ -2,11 +2,11 @@
 <!--내일배움카드제 xml-->
 
 <ScrollView
+    android:id="@+id/mostOuter"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/mostOuter">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/outer"
