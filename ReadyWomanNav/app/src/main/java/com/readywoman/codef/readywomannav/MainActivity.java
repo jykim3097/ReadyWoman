@@ -102,7 +102,10 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 ClassItem item = (ClassItem) adapter.getItem(position);
-                Toast.makeText(getApplicationContext(), "선택 : " + item.getcName(), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                Toast.makeText(getApplicationContext(), "선택 : " + item.getcName() + position, Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -204,7 +207,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-   //search icon in ActionBar
+    //search icon in ActionBar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
@@ -224,7 +227,7 @@ public class MainActivity extends AppCompatActivity
         }
         return super.onOptionsItemSelected(menuItem);
     }
-    
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -301,8 +304,8 @@ public class MainActivity extends AppCompatActivity
 
     private void doWhileCursorToArray() {
         mCursor = null;
-       
-       //db에 있는 모든 칼럼을 가져옴
+
+        //db에 있는 모든 칼럼을 가져옴
         mCursor = mDBOpenHelper.getAllColumns();
         //컬럼의 갯수 확인
         Log.i("Column 개수 확인 ", "Count = " + mCursor.getCount());
