@@ -64,6 +64,37 @@
         담당자에게 문의하여 주시기 바랍니다.</string>
 
 
+    <!--내일배움카드제 tab2 activity_national_tomorrow_tab2.xml string-->
+    <!--tomorrow2_def-->
+    <string name="tomorrow2_def_name">서울시여성인력개발기관은?</string>
+    <string name="tomorrow2_def_content">여성의 경력개발 및 취업 확대를 위해 서울시의 여성일자리
+        정책을 실행하는 기관으로, 서울시내 23곳이 운영되고 있습니다. 여성인력개발기관(통칭)은 여성 전문인력
+        양성 및 취업연계, 창업지원 등을 통해 여성들의 능력을 개발하고 사회로의 진출을 돕고 있습니다.</string>
+    <!--tomorrow2_def_table1-->
+    <string name="tomorrow2_title1">서울시여성능력개발원 (마포구 도화동)</string>
+    <string name="tomorrow2_defTable1_tr1_td2">서울시여성인력개발기관 총괄,조정, 기능/통합정보제공</string>
+    <string name="tomorrow2_defTable1_tr2_td2">여성유망직종 개발 및 보급</string>
+    <string name="tomorrow2_defTable1_tr3_td2">여성일자리 창출사업 운영 총괄</string>
+    <!--tomorrow2_def_table2-->
+    <string name="tomorrow2_title2">서울시여성발전센터(5개소) (광진, 금천, 노원, 마포, 양천)</string>
+    <string name="tomorrow2_defTable2_tr1_td2">전문 및 일반직업교육, 생활문화교육 운영</string>
+    <string name="tomorrow2_defTable2_tr2_td2">지역연계 프로그램(노인,아동) 운영</string>
+    <string name="tomorrow2_defTable2_tr3_td2">여성창업보육시설 / 여성대체인력지원센터 운영</string>
+    <!--tomorrow2_def_table3-->
+    <string name="tomorrow2_title3">서울시여성인력개발센터(18개소) (자치구별로 소재)</string>
+    <string name="tomorrow2_defTable3_tr1_td2">실업자 및 재직자(국비지원) 프로그램 운영</string>
+    <string name="tomorrow2_defTable3_tr2_td2">직업훈련 프로그램 및 기타특강 운영</string>
+    <string name="tomorrow2_defTable3_tr3_td2">취업 상담 및 알선</string>
+    <!--tomorrow2_distribution-->
+    <string name="tomorrow2_distribution_name">서울특별시 여성인력개발기관 분포도</string>
+    <!--tomorrow2_contact-->
+    <string name="tomorrow2_contact_name1">서울특별시 여성능력개발원 연락처</string>
+    <string name="tomorrow2_contactName1_title">서울시여성능력개발원</string>
+    <string name="tomorrow2_contactTable1_tr1_td2">소재지 : 서울특별시 마포구 마포대로 89(도화동, POST TOWER) 7층</string>
+    <string name="tomorrow2_contactTable1_tr2_td2">전화번호 : 02-590-1900</string>
+    <string name="tomorrow2_contactTable1_tr3_td2">홈페이지 : http://swrd.seoulwomanup.or.kr</string>
+
+
     <!--근로자카드제 activity_national_employeecard.xml string-->
     <!--employee_def-->
     <string name="employee_def_name">근로자직업능력개발훈련이란?</string>
