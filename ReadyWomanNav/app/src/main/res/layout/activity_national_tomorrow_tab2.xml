@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--내일배움카드제 tab2 xml-->
+
+<ScrollView
+    android:id="@+id/tomorrow2_mostOuter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/tomorrow2_outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tomorrow2_def"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <!--서울시여성인력개발기관은?-->
+            <TextView
+                android:id="@+id/tomorrow2_defName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/tomorrow2_def_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/tomorrow2_defContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/tomorrow2_def_content"/>
+
+            <!--서울시여성인력개발기관은? 밑에 table1-->
+            <TextView
+                android:id="@+id/tomorrow2_def_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tomorrow2_title1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TableLayout
+                android:id="@+id/tomorrow2_defTable1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="1,2"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable1_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable1_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable1_tr1_td2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable1_tr1_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable1_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable1_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9"/>
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable1_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable1_tr2_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable1_tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable1_tr3_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable1_tr3_td2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable1_tr3_td2"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <!--서울시여성인력개발기관은? 밑에 table2-->
+            <TextView
+                android:id="@+id/tomorrow2_def_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tomorrow2_title2"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TableLayout
+                android:id="@+id/tomorrow2_defTable2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="1,2"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable2_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable2_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable2_tr1_td2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable2_tr1_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable2_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable2_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9"/>
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable2_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable2_tr2_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable2_tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable2_tr3_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable2_tr3_td2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable2_tr3_td2"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <!--서울시여성인력개발기관은? 밑에 table3-->
+            <TextView
+                android:id="@+id/tomorrow2_def_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tomorrow2_title3"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TableLayout
+                android:id="@+id/tomorrow2_defTable3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="1,2"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable3_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable3_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable3_tr1_td2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable3_tr1_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable3_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable3_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9"/>
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable3_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable3_tr2_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tomorrow2_defTable3_tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable3_tr3_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/tomorrow2_defTable3_tr3_td2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable3_tr3_td2"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tomorrow2_distribution"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <!--서울특별시 여성인력개발기관 분포도-->
+            <TextView
+                android:id="@+id/tomorrow2_distributionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/tomorrow2_distribution_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <ImageView
+                android:id="@+id/tomorrow2_distribution_img"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/wm_int_3"
+                android:scaleType="fitStart"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tomorrow2_contact"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <!--서울특별시 여성능력개발원 연락처-->
+            <TextView
+                android:id="@+id/tomorrow2_contactName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/tomorrow2_contact_name1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"
+                android:background="#f9eff9"/>
+
+            <TextView
+                android:id="@+id/tomorrow2_contactName1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/tomorrow2_contactName1_title"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#a839a8"/>
+
+            <TableLayout
+                android:id="@+id/tomorrow2_contactTable1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="1,2"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:id="@+id/tomorrow2_contactTable1_tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_contactTable1_tr1_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/tomorrow2_contactTable1_tr1_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_contactTable1_tr1_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tomorrow2_contactTable1_tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_contactTable1_tr2_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#f9eff9"/>
+                    <TextView
+                        android:id="@+id/tomorrow2_contactTable1_tr2_td2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_contactTable1_tr2_td2"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tomorrow2_contactTable1_tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/tomorrow2_contactTable1_tr3_td1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/blank"
+                        android:background="#a839a8" />
+                    <TextView
+                        android:id="@+id/tomorrow2_contactTable1_tr3_td2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomorrow2_defTable3_tr3_td2"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
