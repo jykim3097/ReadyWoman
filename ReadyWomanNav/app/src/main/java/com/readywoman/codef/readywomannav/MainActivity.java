@@ -33,6 +33,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
     ListView contentListView;
     ClassAdapter adapter;
 
@@ -247,17 +248,29 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_program_list) {
             // Handle the camera action
         } else if (id == R.id.national1) {
-
+            Intent intent = new Intent(getApplicationContext(), NationalTomorrowActivity.class);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
         } else if (id == R.id.national2) {
-
+            Intent intent = new Intent(getApplicationContext(), NationalEmployeecardActivity.class);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
         } else if (id == R.id.national3) {
-
+            Intent intent = new Intent(getApplicationContext(), NationalSeoulsupportActivity.class);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
         } else if (id == R.id.national4) {
-
+            Intent intent = new Intent(getApplicationContext(), NationalMogefsupportActivity.class);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
         } else if (id == R.id.national5) {
-
+            Intent intent = new Intent(getApplicationContext(), NationalEtcsupportActivity.class);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
         } else if (id == R.id.national6) {
-
+            Intent intent = new Intent(getApplicationContext(), NationalCollectiveconsultationActivity.class);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
