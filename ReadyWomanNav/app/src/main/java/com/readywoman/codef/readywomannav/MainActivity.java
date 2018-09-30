@@ -25,11 +25,6 @@ public class MainActivity extends AppCompatActivity
     ListView contentListView;
     ClassAdapter adapter;
 
-    //크롤링할 웹페이지
-    String pageURL1 = "https://www.seoulwomanup.or.kr/womanup/edu/selectProgramPageListAll.do?currentPage=";
-    String pageURL2 = "&organPgName=&schOrganCode=&schCourseCode=&schDomainCode=&schGroupCode=&schEduSt=&schDayOfWeek=&schEduFee=&schLecturerName=&schClassName=";
-    ClassItem[] arrClass = new ClassItem[1000];
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
