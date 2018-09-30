@@ -283,4 +283,7 @@
     <!--<string name="submit_tr2">참가신청서</string>-->
     <string name="cc_submit_tr3">반명함사진 1매</string>
     <string name="cc_submit_tr4">주민등록증 사본 1부</string>
+
+    <!--nosearchresults.xml-->
+    <string name="nosearchresults">검색 결과가 없습니다.</string>
 </resources>
