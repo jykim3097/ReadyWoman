@@ -2,14 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <item android:title="전체 프로그램">
-        <menu>
-            <item
-                android:id="@+id/nav_program_list"
-                android:title="프로그램 목록" />
-        </menu>
-    </item>
-
     <item android:title="국/시비 지원 프로그램"
         >
         <menu>

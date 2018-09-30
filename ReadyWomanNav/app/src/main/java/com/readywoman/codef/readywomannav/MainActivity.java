@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity
     String[] statuses = {"전체","신청","마감", "준비", "대기", "방문"};
     String centerChoice;
     String statusChoice;
-    Button searchButton;
     EditText editSearch;
 
     @Override
@@ -54,56 +53,6 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        //spinner 요소 추가
-        Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
-        Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
-
-        final ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(
-                this,android.R.layout.simple_spinner_dropdown_item, centers);
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(
-                this,android.R.layout.simple_spinner_dropdown_item, statuses);
-
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        spinner1.setAdapter(adapter1);
-        spinner3.setAdapter(adapter3);
-
-        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-                if(position == 0){ //검색 조건이 없을 때
-                    centerChoice = null;
-                } else{
-                    centerChoice = centers[position];
-                }
-                Toast.makeText(getApplicationContext(), "선택 : " + centerChoice, Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                Toast.makeText(getApplicationContext(), "아무것도 선택 안됨", Toast.LENGTH_LONG).show();
-
-            }
-        });
-
-        spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-                if(position == 0){ //검색 조건이 없을 때
-                    statusChoice = null;
-                } else{
-                    statusChoice = statuses[position];
-                }
-                Toast.makeText(getApplicationContext(), "선택 : " + statusChoice, Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                Toast.makeText(getApplicationContext(), "아무것도 선택 안됨", Toast.LENGTH_LONG).show();
-
-            }
-        });
         //listView
         contentListView = (ListView) findViewById(R.id.content_listView);
 
@@ -161,9 +110,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_program_list) {
-            // Handle the camera action
-        } else if (id == R.id.national1) {
+        if (id == R.id.national1) {
             Intent intent = new Intent(getApplicationContext(), NationalTomorrowActivity.class);
             startActivity(intent);
             overridePendingTransition(0, 0);
