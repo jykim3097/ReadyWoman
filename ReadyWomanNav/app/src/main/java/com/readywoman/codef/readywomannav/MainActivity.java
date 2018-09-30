@@ -13,8 +13,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -24,6 +28,13 @@ public class MainActivity extends AppCompatActivity
 
     ListView contentListView;
     ClassAdapter adapter;
+    String[] centers={"전체","중부여성발전센터", "북부여성발전센터", "남부여성발전센터", "서부여성발전센터", "동부여성발전센터", "동작여성인력개발센터", "송파여성인력개발센터",
+            "서초여성인력개발센터", "용산여성인력개발센터", "중랑여성인력개발센터", "성동여성인력개발센터", "장애여성인력개발센터", "강동여성인력개발센터", "서울시여성능력개발원"};
+    String[] statuses = {"전체","신청","마감", "준비", "대기", "방문"};
+    String centerChoice;
+    String statusChoice;
+    Button searchButton;
+    EditText editSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +54,56 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        //spinner 요소 추가
+        Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
+        Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
+
+        final ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(
+                this,android.R.layout.simple_spinner_dropdown_item, centers);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(
+                this,android.R.layout.simple_spinner_dropdown_item, statuses);
+
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spinner1.setAdapter(adapter1);
+        spinner3.setAdapter(adapter3);
+
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                if(position == 0){ //검색 조건이 없을 때
+                    centerChoice = null;
+                } else{
+                    centerChoice = centers[position];
+                }
+                Toast.makeText(getApplicationContext(), "선택 : " + centerChoice, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                Toast.makeText(getApplicationContext(), "아무것도 선택 안됨", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+        spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                if(position == 0){ //검색 조건이 없을 때
+                    statusChoice = null;
+                } else{
+                    statusChoice = statuses[position];
+                }
+                Toast.makeText(getApplicationContext(), "선택 : " + statusChoice, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                Toast.makeText(getApplicationContext(), "아무것도 선택 안됨", Toast.LENGTH_LONG).show();
+
+            }
+        });
         //listView
         contentListView = (ListView) findViewById(R.id.content_listView);
 
@@ -82,20 +143,6 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem menuItem) {
-        int itemId = menuItem.getItemId();
-        switch (itemId) {
-            case R.id.action_search:
-                Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
-                startActivity(intent);
-                break;
-            default:
-                break;
-        }
-        return super.onOptionsItemSelected(menuItem);
     }
 
     @Override
