@@ -1,11 +1,6 @@
 package com.readywoman.codef.readywomannav;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.SQLException;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.util.Log;
 import android.os.Bundle;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -22,13 +17,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.readywoman.codef.readywomannav.db.DBOpenHelper;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
-
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
@@ -36,12 +24,6 @@ public class MainActivity extends AppCompatActivity
 
     ListView contentListView;
     ClassAdapter adapter;
-
-    //DB관련
-    private DBOpenHelper mDBOpenHelper;
-    private Cursor mCursor;
-    private InfoClass mInfoClass;
-    private ArrayList<InfoClass> mInfoArr;
 
     //크롤링할 웹페이지
     String pageURL1 = "https://www.seoulwomanup.or.kr/womanup/edu/selectProgramPageListAll.do?currentPage=";
@@ -53,18 +35,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //데이터베이스 생성(파라메터 Context) 및 오픈
-        mDBOpenHelper = new DBOpenHelper(this);
-        try {
-            mDBOpenHelper.open();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        //크롤링 생성 및 시작
-        JsoupAsyncTask jsoupAsyncTask = new JsoupAsyncTask();
-        jsoupAsyncTask.execute();
-
+        //어떤 툴바인지 주석달아주세용 by. sy
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -109,103 +80,6 @@ public class MainActivity extends AppCompatActivity
                 Toast.makeText(getApplicationContext(), "선택 : " + item.getcName() + position, Toast.LENGTH_LONG).show();
             }
         });
-    }
-
-    private class JsoupAsyncTask extends AsyncTask<Void, Void, Void> {
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        @Override
-        protected Void doInBackground(Void... voids) {
-            try {
-                int j = 1;
-                while (j <= 2) {
-                    Document doc = Jsoup.connect(pageURL1 + j + pageURL2).get();
-                    System.out.println("\n" + j + "페이지\n");
-
-                    for (int i = 1; i <= 9; i++) {
-                        Elements titles = doc.select("#sub > section > section > div > ul > li:nth-child(" + i + ") > div > dl > dt");
-                        String proName = titles.text().trim();
-
-                        if (proName.contains("관계없음"))
-                            proName = proName.substring(0, proName.length() - 4);
-                        else proName = proName.substring(0, proName.length() - 2);
-
-                        titles = doc.select("#sub > section > section > div > ul > li:nth-child(" + i + ") > div > dl > dd:nth-child(6) > em");
-                        String proTerm = titles.text().trim();
-
-                        titles = doc.select("#sub > section > section > div > ul > li:nth-child(" + i + ") > div > dl > dd:nth-child(7) > em");
-                        String proTime = titles.text().trim();
-
-                        titles = doc.select("#sub > section > section > div > ul > li:nth-child(" + i + ") > div > dl > dd.line_bottom > em");
-                        String proPrice = titles.text().trim();
-
-                        titles = doc.select("#sub > section > section > div > ul > li:nth-child(" + i + ") > div > dl > dd:nth-child(4) > em");
-                        String proStatus = titles.text().trim();
-
-                        titles = doc.select("#sub > section > section > div > ul > li:nth-child(" + i + ") > div > h2");
-                        String proCenter = titles.text().trim();
-
-                        ClassItem p = new ClassItem(proName, proTerm, proTime, proPrice, proStatus, proCenter);
-                        arrClass[i] = p;
-                        //saveInput(arr[i].getcName(), arr[i].getcTerm(), arr[i].getcTime(), arr[i].getcPrice(), arr[i].getCenter(), arr[i].getcState());
-                        System.out.println("--------------------------------------");
-                        System.out.println(j + "페이지");
-                        System.out.println(+i + "번" + "강좌명: " + arrClass[i].getcName());
-                        System.out.println("교육기간: " + arrClass[i].getcTerm());
-                        System.out.println("시간/요일: " + arrClass[i].getcTime());
-                        System.out.println("수강료: " + arrClass[i].getcPrice());
-                        System.out.println("강좌상태: " + arrClass[i].getStatus());
-                        System.out.println("센터: " + arrClass[i].getCenter());
-//                        htmlContentInStringFormat += j+"페이지\n"+arrClass[i].getcName() +"\n" + arrClass[i].getcTerm()+"  "+ arrClass[i].getcTime() +"\n"
-//                                + arrClass[i].getcPrice() + "원"+"  "+"정원: "+arrClass[i].getcStatus()+"\n" + arrClass[i].getCenter()+"\n\n";
-                        mDBOpenHelper.insertColumn(arrClass[i].cName, arrClass[i].cTerm, arrClass[i].cTime, arrClass[i].cPrice, arrClass[i].status, arrClass[i].center);
-                        /*
-                        doWhileCursorToArray();
-
-                        //값이 제대로 입력되었는지 확인하기 위해 로그
-                        for (InfoClass ic : mInfoArr) {
-                            Log.i("값이 제대로 입력됐는지 테스트", "id = " + ic._id);
-                            Log.i("값이 제대로 입력됐는지 테스트", "name = " + ic.name);
-                            Log.i("값이 제대로 입력됐는지 테스트", "term = " + ic.term);
-                            Log.i("값이 제대로 입력됐는지 테스트", "time = " + ic.time);
-                            Log.i("값이 제대로 입력됐는지 테스트", "price = " + ic.price);
-                            Log.i("값이 제대로 입력됐는지 테스트", "status = " + ic.status);
-                            Log.i("값이 제대로 입력됐는지 테스트", "center = " + ic.center);
-                        }
-                        */
-                    }
-//                    htmlContentInStringFormat += "\n"+(j+1)+"페이지로 이동\n";
-                    System.out.println("\n" + (j + 1) + "페이지로 이동");
-                    j++;
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void aVoid) {
-            //txtArea.setText(htmlContentInStringFormat);
-
-            mInfoArr = new ArrayList<InfoClass>();
-
-            doWhileCursorToArray();
-
-            //값이 제대로 입력되었는지 확인하기 위해 로그
-            for (InfoClass ic : mInfoArr) {
-                Log.i("값이 제대로 입력됐는지 테스트", "id = " + ic._id);
-                Log.i("값이 제대로 입력됐는지 테스트", "name = " + ic.name);
-                Log.i("값이 제대로 입력됐는지 테스트", "term = " + ic.term);
-                Log.i("값이 제대로 입력됐는지 테스트", "time = " + ic.time);
-                Log.i("값이 제대로 입력됐는지 테스트", "price = " + ic.price);
-                Log.i("값이 제대로 입력됐는지 테스트", "status = " + ic.status);
-                Log.i("값이 제대로 입력됐는지 테스트", "center = " + ic.center);
-            }
-        }
     }
 
     //search icon in ActionBar
@@ -315,35 +189,8 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    private void doWhileCursorToArray() {
-        mCursor = null;
-
-        //db에 있는 모든 칼럼을 가져옴
-        mCursor = mDBOpenHelper.getAllColumns();
-        //컬럼의 갯수 확인
-        Log.i("Column 개수 확인 ", "Count = " + mCursor.getCount());
-
-        while (mCursor.moveToNext()) {
-            //InfoClass에 입력된 값을 압력
-            mInfoClass = new InfoClass(
-                    mCursor.getInt(mCursor.getColumnIndex("_id")),
-                    mCursor.getString(mCursor.getColumnIndex("className")),
-                    mCursor.getString(mCursor.getColumnIndex("classTerm")),
-                    mCursor.getString(mCursor.getColumnIndex("classTime")),
-                    mCursor.getString(mCursor.getColumnIndex("classPrice")),
-                    mCursor.getString(mCursor.getColumnIndex("classStatus")),
-                    mCursor.getString(mCursor.getColumnIndex("classCenter"))
-            );
-            //입력된 값을 가지고 있는 InfoClass를 InfoArray에 add
-            mInfoArr.add(mInfoClass);
-        }
-        //Cursor 닫기
-        mCursor.close();
-    }
-
     @Override
     protected void onDestroy() {
-        mDBOpenHelper.close();
         super.onDestroy();
     }
 }
