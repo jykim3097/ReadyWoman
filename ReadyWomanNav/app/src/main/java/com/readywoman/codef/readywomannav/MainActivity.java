@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //어떤 툴바인지 주석달아주세용 by. sy
+        //app_bar_main의 toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity
         });
     }
 
-    //search icon in ActionBar
+  //search icon in ActionBar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
