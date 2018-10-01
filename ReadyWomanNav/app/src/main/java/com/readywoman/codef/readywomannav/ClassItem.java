@@ -8,6 +8,7 @@ public class ClassItem {
     private String status;
     private String center;
 
+    public ClassItem(){}
     public ClassItem(String cName, String cTerm, String cTime, String cPrice, String status, String center){
         this.cName = cName;
         this.cTerm = cTerm;
