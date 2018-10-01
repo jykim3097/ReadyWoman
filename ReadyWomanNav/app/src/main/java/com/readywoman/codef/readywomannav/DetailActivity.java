@@ -14,7 +14,8 @@ import java.io.IOException;
 
 public class DetailActivity extends AppCompatActivity {
 
-    private String pageURL = "https://www.seoulwomanup.or.kr/womanup/edu/selectProgramPageListAll.do";
+    private String pageURL1 ="https://www.seoulwomanup.or.kr/womanup/edu/selectProgramPageListAll.docurrentPage=";
+    private String pageURL2 ="&organPgName=&schOrganCode=&schCourseCode=&schDomainCode=&schGroupCode=&schEduSt=&schDayOfWeek=&schEduFee=&schLecturerName=&schClassName=";
     private String detailsURL= "";
 
     private String cName="";
@@ -76,97 +77,104 @@ public class DetailActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
-
             try {
-                //crawling course name
-                Document doc = Jsoup.connect(pageURL).get();
-                Elements name = doc.select("#sub > section > section > div > ul > li:nth-child(1) > div > dl > dt");
 
-                for(Element n:name) {
-                    cName += n.text().trim();
-                }
-
-                if(cName.contains("관계없음")){
-                    cName = cName.substring(0, cName.length()-4);
-                }
-                else{
-                    cName = cName.substring(0, cName.length()-2);
-                }
-                //crawling a tag
-                Elements links = doc.select("#sub > section > section > div > ul > li:nth-child(1) > div > a[onclick]");
-                for(Element link : links ) {
-                    linkString += link.attr("onclick");
-                }
-                linkString = linkString.replace("application('", "");
-                parts = linkString.split("','");
-
-                part1 = parts[0]; //http ~ jsp
-                part2 = parts[1]; //C~
-                part3 = parts[2]; //center name
-
-                detailsURL = part1 + "?class_code=" + part2;
-
-                /*crawling details window*/
-                Document doc2 = Jsoup.connect(detailsURL).get();
+                    //crawling course name
+                    Document doc = Jsoup.connect(pageURL1 + 1 + pageURL2).get();
 
 
-                for(int i = 2; i<7; i++){
-                    Elements term = doc2.select("#inConts > div.boxmodel1 > div > div > div > div.edu-contents > ul > li:nth-child("+ i +")");
-                    if(i==2) {
-                        for(Element t : term) {
-                            htmlString += t.text().trim();
+                        Elements name = doc.select("#sub > section > section > div > ul > li:nth-child("+1+") > div > dl > dt");
+
+                        for(Element n:name) {
+                            cName += n.text().trim();
                         }
-                        htmlStringRemover = htmlString.replace("교육기간 : ","");
-                        htmlStringList[i] = htmlStringRemover;
-                        htmlString = temp;
-                        htmlStringRemover = temp;
-                    }
-                    else if (i==3) {
-                        for(Element t : term) {
-                            htmlString += t.text().trim();
-                        }
-                        htmlStringRemover = htmlString.replace("교육시간 : ","");
-                        htmlStringList[i] = htmlStringRemover;
-                        htmlString = temp;
-                        htmlStringRemover = temp;
-                    }
-                    else if (i==4) {
-                        for(Element t : term) {
-                            htmlString += t.text().trim();
-                        }
-                        htmlStringRemover = htmlString.replace("수강료 : ","");
-                        htmlStringList[i] = htmlStringRemover;
-                        htmlString = temp;
-                        htmlStringRemover = temp;
-                    }
-                    else if (i==5) {
-                        for(Element t : term) {
-                            htmlString += t.text().trim();
-                        }
-                        htmlStringRemover = htmlString.replace("수강신청기간 : ","");
-                        htmlStringList[i] = htmlStringRemover;
-                        htmlString = temp;
-                        htmlStringRemover = temp;
-                    }
-                    else if (i==6) {
-                        for(Element t : term) {
-                            htmlString += t.text().trim();
-                        }
-                        htmlStringRemover = htmlString.replace("접수방법 : ","");
-                        htmlStringList[i] = htmlStringRemover;
-                        htmlString = temp;
-                        htmlStringRemover = temp;
-                    }
-                }
 
-                for(int j=1;j<5;j++){
-                    Elements elements = doc2.select("#inConts > div.edu-wrap > div.edu-detailbox > div:nth-child("+2*j+")");
-                    for(Element e:elements) {
-                        htmlString += e.text().trim();
-                    }
-                    htmlStringList2[j] = htmlString;
-                    htmlString = temp;
-                }
+                        if(cName.contains("관계없음")){
+                            cName = cName.substring(0, cName.length()-4);
+                        }
+                        else{
+                            cName = cName.substring(0, cName.length()-2);
+                        }
+
+                        //crawling a tag
+                        Elements links = doc.select("#sub > section > section > div > ul > li:nth-child("+1+") > div > a[onclick]");
+                        for(Element link : links ) {
+                            linkString += link.attr("onclick");
+                        }
+
+                        linkString = linkString.replace("application('", "");
+                        parts = linkString.split("','");
+
+                        part1 = parts[0]; //http ~ jsp
+                        part2 = parts[1]; //C~
+                        part3 = parts[2]; //center name
+
+                        detailsURL = part1 + "?class_code=" + part2;
+
+                        /*crawling details window*/
+                        Document doc2 = Jsoup.connect(detailsURL).get();
+
+                        for(int i = 2; i<7; i++){
+                            Elements term = doc2.select("#inConts > div.boxmodel1 > div > div > div > div.edu-contents > ul > li:nth-child("+ i +")");
+                            if(i==2) {
+                                for(Element t : term) {
+                                    htmlString += t.text().trim();
+                                }
+                                htmlStringRemover = htmlString.replace("교육기간 : ","");
+                                htmlStringList[i-2] = htmlStringRemover;
+                                htmlString = temp;
+                                htmlStringRemover = temp;
+                            }
+                            else if (i==3) {
+                                for(Element t : term) {
+                                    htmlString += t.text().trim();
+                                }
+                                htmlStringRemover = htmlString.replace("교육시간 : ","");
+                                htmlStringList[i-2] = htmlStringRemover;
+                                htmlString = temp;
+                                htmlStringRemover = temp;
+                            }
+                            else if (i==4) {
+                                for(Element t : term) {
+                                    htmlString += t.text().trim();
+                                }
+                                htmlStringRemover = htmlString.replace("수강료 : ","");
+                                htmlStringList[i-2] = htmlStringRemover;
+                                htmlString = temp;
+                                htmlStringRemover = temp;
+                            }
+                            else if (i==5) {
+                                for(Element t : term) {
+                                    htmlString += t.text().trim();
+                                }
+                                htmlStringRemover = htmlString.replace("수강신청기간 : ","");
+                                htmlStringList[i-2] = htmlStringRemover;
+                                htmlString = temp;
+                                htmlStringRemover = temp;
+                            }
+                            else if (i==6) {
+                                for(Element t : term) {
+                                    htmlString += t.text().trim();
+                                }
+                                htmlStringRemover = htmlString.replace("접수방법 : ","");
+                                htmlStringList[i-2] = htmlStringRemover;
+                                htmlString = temp;
+                                htmlStringRemover = temp;
+                            }
+                        }
+
+                        for(int j=1;j<5;j++){
+                            Elements elements = doc2.select("#inConts > div.edu-wrap > div.edu-detailbox > div:nth-child("+2*j+")");
+                            for(Element e:elements) {
+                                htmlString += e.text().trim();
+                            }
+                            htmlStringList2[j-1] = htmlString;
+                            htmlString = temp;
+                        }
+
+
+                
+
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -178,16 +186,16 @@ public class DetailActivity extends AppCompatActivity {
         protected void onPostExecute(Void result) {
             setTitle(cName);
             center.setText(part3);
-            cTerm.setText(htmlStringList[2]);
-            cTime.setText(htmlStringList[3]);
-            cPrice.setText(htmlStringList[4]);
-            cATerm.setText(htmlStringList[5]);
-            cRMethod.setText(htmlStringList[6]);
+            cTerm.setText(htmlStringList[0]);
+            cTime.setText(htmlStringList[1]);
+            cPrice.setText(htmlStringList[2]);
+            cATerm.setText(htmlStringList[3]);
+            cRMethod.setText(htmlStringList[4]);
 
-            cQual.setText(htmlStringList2[1]);
-            cGoal.setText(htmlStringList2[2]);
-            cOverview.setText(htmlStringList2[3]);
-            cCost.setText(htmlStringList2[4]);
+            cQual.setText(htmlStringList2[0]);
+            cGoal.setText(htmlStringList2[1]);
+            cOverview.setText(htmlStringList2[2]);
+            cCost.setText(htmlStringList2[3]);
         }
     }
 
